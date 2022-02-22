@@ -40,6 +40,7 @@ end
 
 T.MoreSpells = {
     [125]={type="aura", damageATK1=60, modDamageDealt=-50, target="random-enemy", duration=1}, -- Deranged Gouge (Possessed Scavenger), see #64
+    [200]={type="aura", target="enemy-front", damageATK=100, modDamageDealt=-50, duration=1}, -- Stunning Swipe (Corpselice Spawnlings), see #53
     [305]={type="nuke", target="enemy-back", damageATK=120}, --Roots of Submission
     [306]={type="aura", target=3, duration=3, modMaxHPATK=60, plusDamageDealtATK=40}, --Arcane Empowerment
     [310]={
