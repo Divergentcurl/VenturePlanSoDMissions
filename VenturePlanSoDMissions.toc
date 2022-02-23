@@ -1,7 +1,7 @@
-## Interface: 90105
+## Interface: 90200
 ## Title: Venture Plan SoD Missions
 ## Version: 0.10
-## Notes: Adds 9.1 table missions and fixes to Venture Plan.
+## Notes: Adds 9.1 and 9.2 table missions and fixes to Venture Plan.
 ## Author: hythloday
 ## Dependencies: VenturePlan
 ## License: GPLv3
