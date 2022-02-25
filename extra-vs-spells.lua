@@ -104,10 +104,13 @@ T.MoreSpells = {
 	[366]={type="nuke", damageATK=50, target="enemy-front"},
 	[367]={type="nuke", damageATK=75, target="cone"},
 	[368]={type="nuke", damageATK=60, target=1},
-	[369]={type="nuke", damagePerc=100, target="all-enemies", nore=true, echo=2},
+	[369]={
+		[1]={type="nop"},
+		[2]={type="aura", damageATK=50, target="all-enemies", duration=0, noFirstTick=true, echo=2},
+	},
 	[370]={type="aura", modDamageDealt=-50, target="all-enemies", duration=2},
 	[371]={type="aura", modDamageTaken=-25, target="all-other-allies", duration=2},
-	[372]={type="nuke", damageATK=80, target="enemy-front"},
+	[372]={type="nuke", damageATK=40, target="enemy-front"},
 	[373]={
 		[1]={type="nuke", damageATK=100, target=1},
 		[2]={type="heal", healATK=100, target=4},
