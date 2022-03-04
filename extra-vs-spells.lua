@@ -98,7 +98,7 @@ T.MoreSpells = {
 	[360]={type="nuke", damageATK=50, target="enemy-front"},
 	[361]={type="nuke", damageATK=75, target="enemy-front"},
 	[362]={type="nuke", damageATK=120, target=1},
-	[363]={type="aura", modDamageDealt=10, target="friend-front-hard", duration=2},
+	[363]={type="aura", modDamageDealt=10, target="friend-front-soft", duration=2},
 	[364]={type="taunt", target="all-enemies", duration=2},
 	[365]={type="aura", modDamageTaken=50, target=0, duration=1},
 	[366]={type="nuke", damageATK=50, target="enemy-front"},
