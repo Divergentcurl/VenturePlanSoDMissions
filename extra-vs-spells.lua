@@ -39,6 +39,10 @@ function to_string( tbl )
 end
 
 T.MoreSpells = {
+	[107]={
+		{type="aura", target=0, damageATK=150, duration=4, nore=true},
+		{type="aura", target=0, plusDamageTakenATK=50, duration=3},
+	}, -- Catastrophic Skeleton Infestation, see #46
     [125]={type="aura", damageATK1=60, modDamageDealt=-50, target="random-enemy", duration=1}, -- Deranged Gouge (Possessed Scavenger), see #64
     [200]={type="aura", target="enemy-front", damageATK=100, modDamageDealt=-50, duration=1}, -- Stunning Swipe (Corpselice Spawnlings), see #53
     [305]={type="nuke", target="enemy-back", damageATK=120}, --Roots of Submission
@@ -52,6 +56,7 @@ T.MoreSpells = {
         {type="aura", target=3, duration=2, modMaxHPATK=40},
     }, --Wings of Mending
     [315]={type="aura", target=1, damageATK1=150, duration=2, modDamageDealt=-30}, --Resounding Message
+    [319]={type="aura", target="enemy-front", duration=4, damageATK1=80, damageATK=50, noFirstTick=true}, --Shattering Blows, see #17
     [325]={type="aura", target="friend-surround", duration=2, modDamageDealt=60}, --Vision of Beauty
     [326]={type="nuke", target="cleave", damageATK=25}, --Shiftless Smash
     [327]={type="aura", target="all-other-allies", duration=3, plusDamageDealtATK=20}, --Inspirational Teachings
@@ -60,7 +65,7 @@ T.MoreSpells = {
     [330]={type="aura", target="all-allies", duration=2, plusDamageDealtATK=20}, --Oversight
     [331]={type="aura", target="all-other-allies", duration=3, plusDamageDealtATK=20}, --Supporting Fire
     [332]={type="nuke", target=1, damageATK=150}, --Emptied Mug
-    [333]={type="aura", target=4, duration=3, modDamageDealt=40}, --Overload
+    [333]={type="aura", target=4, duration=3, plusDamageDealtATK=40}, --Overload, see also #74
     [334]={type="nuke", target=0, damageATK=90}, --Hefty Package
     [335]={type="nuke", target="enemy-back", damageATK=40}, --Errant Package
     [336]={type="heal", target=3, healATK=80}, --Evidence of Wrongdoing
@@ -70,8 +75,8 @@ T.MoreSpells = {
     [341]={type="aura", target=1, damageATK1=120, duration=3, plusDamageTakenATK=20}, --Tainted Bite
     [342]={
 		{type="nuke", target=0, damageATK=100},
-		{type="aura", target=0, duration=2, plusDamageDealtATK=-70},
-	}, --Regurgitated Meal
+		{type="aura", target=0, duration=1, plusDamageDealtATK=-70},
+	}, --Regurgitated Meal, see also #74
     [343]={
 		{type="nuke", target="enemy-front", damageATK=80},
 		{type="aura", target=4, duration=1, modDamageDealt=20},
@@ -84,7 +89,7 @@ T.MoreSpells = {
 		{type="nuke", target=1, damageATK=120},
 		{type="aura", target=1, duration=3, plusDamageTakenATK=20},
 	}, --Tainted Bite
-    [349]={type="nuke", target="all-enemies", damageATK=8}, --Anima Swell
+    [349]={type="nuke", target="all-enemies", damageATK=10}, --Anima Swell, see also #74
     [350]={type="nuke", damageATK=25, target="cleave"},
 	[351]={type="nuke", damageATK=75, target=1, firstTurn=4},
 	[352]={type="nop"},
