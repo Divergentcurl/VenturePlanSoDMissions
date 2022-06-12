@@ -39,6 +39,7 @@ function to_string( tbl )
 end
 
 T.MoreSpells = {
+    [85]={type="aura", target=3, duration=2, firstTurn=3, modDamageTaken=-50},
 	[107]={
 		{type="aura", target=0, damageATK=150, duration=4, nore=true},
 		{type="aura", target=0, plusDamageTakenATK=50, duration=3},
